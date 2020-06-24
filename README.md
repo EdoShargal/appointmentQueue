@@ -51,7 +51,7 @@ inside the directory run npm install than ng serve --open
 
 ### Application Usage
 
-your enter your name the application give you a number and show a list of appointment waitnig. the application save youe details in DB with status 0 , for waiting. 
+your enter your name the application give you a number and show a list of appointment waiting. The application than save your details in DB with status 0, for waiting. 
 
-when an appointment is getting called the application change the appointment status to 1 for getting treatment and also check if there was eaely appointment inside for changing is status to 2 in DB. 
+when an appointment is getting called the application change the appointment status to 1 for getting treatment and also check if there was early appointment inside for changing is status to 2 in DB. 
 
