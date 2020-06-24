@@ -1,0 +1,42 @@
+<div id="queue">
+    <div id="queueOrder">
+        <form (ngSubmit)="appointmentOrder()">
+            <div class="form">
+                <button type="submit">הזמן תור</button>
+
+                <input type="text" id="name" required [(ngModel)]="name" name="name">
+
+            </div>
+        </form>
+    </div>
+    <div id="queueLine">
+        <table *ngIf="appointments" id="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>תור</th>
+                    <th>שם</th>
+                    <th>שעה</th>
+                    <th>סטטוס</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let appointment of appointments; index as i">
+                    <th>{{i+1}}</th>
+                    <td>{{appointment.number}}</td>
+                    <td>{{appointment.name}}</td>
+                    <td>{{appointment.hour | date:'mediumTime'}}</td>
+                    <td>{{appointment.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="queueInvite">
+        <div class="form">
+            <button type="button" (click)="orderInvite()">הזמן תור</button>
+            <span>{{current}}</span>
+        </div>
+    </div>
+
+</div>
