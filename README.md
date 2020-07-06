@@ -11,21 +11,21 @@ response example: //if there is data
     {
         "Id": 1,
         "Number": 1,
-        "Name": "fasd",
+        "Name": "Edo",
         "Status": 2,
         "Hour": "2020-06-24T15:03:01.197"
     },
     {
         "Id": 2,
         "Number": 2,
-        "Name": "fdsafad",
+        "Name": "Alon",
         "Status": 1,
         "Hour": "2020-06-24T15:03:03.517"
     },
     {
         "Id": 3,
         "Number": 3,
-        "Name": "rewrew",
+        "Name": "Oz",
         "Status": 0,
         "Hour": "2020-06-24T15:03:06.42"
     }
